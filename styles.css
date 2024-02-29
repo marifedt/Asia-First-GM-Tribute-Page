@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+main::after {
+  content: '';
+  height: 30px;
+}
+
+.font-suez {
+  font-family: 'Suez One';
+}
+
+.font-verdana {
+  font-family: 'Verdana';
+}
+
+.bold {
+  font-weight: bold;
+}
+
+#title {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #d8dddf;
+  color: #2b2d42;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  padding: 30px 10px;
+}
+
+#hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 50px;
+  width: 100%;
+  justify-items: center;
+}
+
+#hero-title {
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 10px;
+  letter-spacing: 0.1rem;
+  margin-bottom: -25px;
+  color: #2b2d42;
+}
+
+#image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  border: 3px solid #2b2d42;
+}
+
+#img-div {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin-top: 40px;
+  gap: 10px 0;
+  align-items: center;
+}
+
+#img-caption {
+  font-style: italic;
+  font-size: 0.8rem;
+  color: #2b2d42;
+  text-align: center;
+}
+
+#tribute-info {
+  margin: 0 auto;
+  width: 100%;
+  color: #2b2d42;
+  font-family: 'Verdana';
+  background-color: #edf2f4;
+}
+
+#tribute-info-title {
+  width: 80%;
+  font-size: 1.2rem;
+  text-align: center;
+  margin: 30px auto;
+}
+
+#tribute-info ul {
+  width: 80%;
+  margin: 0 auto;
+  line-height: 1.8rem;
+}
+
+#tribute-info ul > li {
+  padding: 10px 0;
+}
+
+#life-quote {
+  width: 45%;
+  margin: 0 auto;
+  padding: 40px 0;
+  letter-spacing: 0.1rem;
+  text-align: center;
+}
+
+#tribute-ending {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 0.95rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: black;
+  padding-bottom: 10px;
+}
+
+/* Screen Size > 1200px */
+@media screen and (min-width: 1200px) {
+  #hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 0;
+    width: 80%;
+  }
+
+  #hero-title {
+    margin: 0 auto;
+    font-size: 2.5rem;
+    width: 90%;
+  }
+
+  #tribute-ending {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  #hero-title {
+    font-size: 3.5rem;
+  }
+}
